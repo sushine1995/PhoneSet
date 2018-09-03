@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\androidexercise\Majiang0627\MajiangSet\app\build\intermediates\incremental-runtime-classes\PhoneSet\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="F:\androidexercise\Majiang0627\MajiangSet\app\build\intermediates\transforms\dex\PhoneSet\debug\folders\1000\10000\instant-run_2113cf3116a9ab2d6a4e4d4f75e2b1051759f722\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\su823\.gradle\caches\modules-2\files-2.1\com.amap.api\location\4.2.0\5116d268ed9c1329d3f2e5e0810f4f63a497d0d5\location-4.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5116d268ed9c1329d3f2e5e0810f4f63a497d0d5">
+        <dex dex="F:\androidexercise\Majiang0627\Majiang\app\build\intermediates\pre-dexed\release\location-4.2.0_0c971a51179f962b956d0d22aaceeb5b74bd70dd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\androidexercise\Majiang0627\MajiangSet\app\build\intermediates\incremental-classes\PhoneSet\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ad4a1b536b78776dbaf286a0521c970e1648d721">
+        <dex dex="F:\androidexercise\Majiang0627\MajiangSet\app\build\intermediates\transforms\dex\PhoneSet\debug\folders\1000\10000\instant-run-bootstrap_48d08882b92a19df573d0c44d35355c82badb6ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\su823\.gradle\caches\modules-2\files-2.1\com.amap.api\location\4.2.0\5116d268ed9c1329d3f2e5e0810f4f63a497d0d5\location-4.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5116d268ed9c1329d3f2e5e0810f4f63a497d0d5">
+        <dex dex="F:\androidexercise\Majiang0627\MajiangSet\app\build\intermediates\transforms\dex\PhoneSet\debug\folders\1000\10\location-4.2.0_0c971a51179f962b956d0d22aaceeb5b74bd70dd\classes.dex" />
+    </item>
+
+</items>

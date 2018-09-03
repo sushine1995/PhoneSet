@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/prot_eye_green">
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_vertical_padding"
+        android:background="@color/action_bar_bg"
+        android:fitsSystemWindows="true">
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="@dimen/ibtn_back_width"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ibtn_back_bg"
+            android:contentDescription="back"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ibtn_back">
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="拨号使用说明"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_l"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_l"
+        android:text="@string/dail_manual"/>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="action_bar_height">66dp</dimen>
+    <dimen name="action_bar_vertical_padding">16dp</dimen>
+
+    <dimen name="main_btn_width">240dp</dimen>
+    <dimen name="main_btn_height">80dp</dimen>
+    <dimen name="main_btn_text_size">25sp</dimen>
+    <dimen name="main_btn_vertical_margin">25sp</dimen>
+
+    <dimen name="ibtn_back_width">40dp</dimen>
+    <dimen name="player_height">60dp</dimen>
+    <dimen name="player_height_half">30dp</dimen>
+
+    <dimen name="a_majiang_width">19dp</dimen>
+    <dimen name="a_majiang_height">26dp</dimen>
+
+    <!-- 方位识别 -->
+    <dimen name="btn_recog_dire_text_size">20sp</dimen>
+    <dimen name="tv_recog_tip">18sp</dimen>
+
+    <!-- 功能设置 -->
+    <dimen name="fun_set_height">60dp</dimen>
+    <dimen name="fun_set_text_size">18sp</dimen>
+    <dimen name="fun_set_spinner_vertical_offset">53dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="text_size_xl">18sp</dimen>
+    <dimen name="text_size_l">16sp</dimen>
+    <dimen name="text_size_m">14sp</dimen>
+    <dimen name="text_size_s">12sp</dimen>
+
+    <dimen name="splite_line_height">0.8dp</dimen>
+    <dimen name="separator_line_height2">22dp</dimen>
+    <dimen name="separator_line_height3">8dp</dimen>
+    <dimen name="separator_line_height4">10dp</dimen>
+    <dimen name="separator_line_height5">2dp</dimen>
+
+    <!--  基本方式 -->
+    <dimen name="tv_tip_height">30dp</dimen>
+    <dimen name="btn_option_height">30dp</dimen>
+    <dimen name="iv_tip_width">20dp</dimen>
+    <dimen name="basic_method_horizontal_interval_1">16dp</dimen>
+    <dimen name="basic_method_horizontal_interval_2">40dp</dimen>
+    <dimen name="basic_method_horizontal_interval_3">20dp</dimen>
+
+    <dimen name="paly_method_setting_horizontal_interval_1">16dp</dimen>
+
+    <dimen name="edit_play_method_horizontal_interval">16dp</dimen>
+    <dimen name="edit_play_method_vertical_interval">20dp</dimen>
+
+    <dimen name="list_item_option_height">40dp</dimen>
+
+
+    <dimen name="basic_num_option_width">62dp</dimen>
+    <dimen name="special_rule_option_width">124dp</dimen>
+
+
+    <dimen name="horizontal_interval">16dp</dimen>
+    <dimen name="horizontal_interval2">10dp</dimen>
+    <dimen name="vertical_interval">10dp</dimen>
+
+    <dimen name="direction_width_height">30dp</dimen>
+
+    <dimen name="choose_card_method_height">32dp</dimen>
+</resources>

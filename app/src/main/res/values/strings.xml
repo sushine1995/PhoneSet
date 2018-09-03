@@ -1,0 +1,712 @@
+<resources>
+    <string name="app_name">PHONESET</string>
+
+    <string name="check_new_version">正在检测版本</string>
+    <string name="there_no_new_version">当前已经是最新版本了哦</string>
+    <string name="dialog_choose_update_title">发现了新版本</string>
+    <string name="dialog_choose_update_content">升级</string>
+    <string name="dialog_btn_confirm_download">升级</string>
+    <string name="dialog_btn_cancel_download">忽略</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string-array name="play_method_arr">
+        <item>玩法一</item>
+        <item>玩法二</item>
+        <item>玩法三</item>
+    </string-array>
+
+    <string name="player_num_fun_tip">根据参与游戏的人数设定，可设定2~4人</string>
+    <string name="every_hand_num_tip">根据玩法需求设置每手抓牌张数</string>
+    <string name="banker_card_num_tip">设置庄家打色上手牌的张数</string>
+    <string name="other_player_card_num_tip">如果千家为闲家，可碰牌可吃牌建议选13（总牌数17张打法则选16），可碰牌不可吃牌或不可碰不可吃建议选14（总牌数17张打法则选17）</string>
+    <string name="banker_skip_tip">庄家的跳牌方式，如无特殊玩法要求选跳拿即可</string>
+    <string name="get_card_method_tip">起牌的拿牌方式，如无特殊玩法要求，选顺拿即可</string>
+    <string name="program_start_times_tip">程序开启设定次数后自动暂停，总使用次数等于连续工作局数</string>
+    <string name="program_stop_times_tip">程序暂停设定次数后自动开启</string>
+    <string name="continuous_working_rounds_tip">每次定位开机，可连续工作多少局后自动关闭程序</string>
+    <string name="total_rounds_tip">每录入一次USB烧录盒程序后，可开机使用的局数</string>
+    <string name="broadcast_card_num_tip">语音报牌抓牌的张数</string>
+    <string name="voice_box_tip">如打钩，关闭麻将主机语音输出，通过外接语音盒接收语音；否则，麻将主机语音输出</string>
+    <string name="machine_head_position_tip">打钩则为机头定位模式，用定位卡靠近机头，第一次为定位开机，第二次为关机；定位卡对同一方位的两次操作时间间隔必须10秒以上，否则第二次操作无效。</string>
+    <string name="panel_induction_tip">如打钩，通过铝塑板感应麻将牌；如不打钩，通过便携式感应板感应麻将牌</string>
+    <string name="money_box_position_tip">打钩则为钱盒定位模式，用定位卡靠近机头，则定位开机，如果定位卡离开30秒以上则关机。注意：如果机头定位钱盒同时打钩，默认为机头定位模式。</string>
+    <string name="continuous_boradcast_card_tip">打钩，则预报牌时报连续4张牌的牌型；不打钩，则跳报千家预抓的牌型</string>
+    <string name="assign_id_card_position_tip">如打钩，只能使用测试8档学习的ID卡定位；否则可任意一张ID卡定位</string>
+    <string name="broadcast_winner_tip">打钩则面板开启报胡牌功能，不打钩则关闭</string>
+    <string name="dice_test_tip">牌的编码为二代码</string>
+    <string name="peng_zhuan_broadcast_card_tip">打钩则面板开启碰转报预抓牌功能，不打钩则关闭</string>
+    <string name="reset_test_tip">如打钩，则洗完牌后即可打色输出；如果不打钩，则洗牌完毕后需按升降键托碗升到上位后方可打色输出。</string>
+    <string name="dice_panel_position_tip">定位成功后色盘上对应方位的庄位灯闪烁提示</string>
+    <string name="blood_fight_mode_tip">打钩则面板开启血战功能，不打钩则关闭</string>
+    <string name="dice_panel_trouble_tip">如打钩，洗牌出现程序相关故障时，色盘上的静音或风干会闪动，此时按任意两相邻的方位键，色盘显示故障代码</string>
+    <string name="digital_switch_tip">如打钩，档位开关改为数显档位开关；如不打钩，则使用双拨码档位开关；出厂默认为双拨码档位开关</string>
+    <string name="three_player_tip">如打钩，四方上牌3人玩，空位不算点数，打1/4/7/10庄家方位起牌</string>
+
+
+    <string-array name="player_num_arr">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="every_hand_num_arr">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="banker_card_num_arr">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="other_player_card_num_arr">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="banker_skip_arr">
+        <item>跳拿</item>
+        <item>平拿</item>
+        <item>竖拿</item>
+    </string-array>
+    <string-array name="get_card_method_arr">
+        <item>顺拿</item>
+        <item>反拿</item>
+        <item>双向抓牌1</item>
+        <item>双向抓牌2（留1墩）</item>
+    </string-array>
+    <string-array name="program_start_times_arr">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="program_stop_times_arr">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="continuous_work_rounds_arr">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="total_rounds_arr">
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>50000</item>
+    </string-array>
+    <string-array name="broadcast_card_num_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="majiang_num_arr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <!-- 机器档位 -->
+    <string-array name="machine_gear_arr">
+        <item>01档：144/18，18，18，18</item>
+        <item>02档：140/17，18，17，18</item>
+        <item>03档：136/17，17，17，17</item>
+        <item>04档：128/16，16，16，16</item>
+        <item>05档：120/15，15，15，15</item>
+        <item>06档：112/14，14，14，14</item>
+        <item>07档：108/13，14，13，14</item>
+        <item>08档：100/12，13，12，13</item>
+        <item>09档：72/12，12，12，0</item>
+        <item>10档：152/19，19，19，19</item>
+        <item>11档：138/17，17，17，18</item>
+        <item>12档：116/14，15，14，15</item>
+        <item>13档：110/14，14，14，13</item>
+        <item>14档：84/14，14，14，0</item>
+        <item>15档：84/12，10，10，10</item>
+        <item>16档：84/10，11，10，11</item>
+        <item>17档：40/10，0，10，0</item>
+        <item>18档：20/10，0，0，0</item>
+        <item>19档：72/9，9，9，9</item>
+        <item>20档：148/18，19，18，19</item>
+        <item>21档：142/18，18，18，17</item>
+        <item>22档：108/18，18，18，0</item>
+        <item>23档：132/16，17，16，17</item>
+        <item>24档：96/16，16，16，0</item>
+        <item>25档：124/15，16，15，16</item>
+        <item>26档：126/16，16，16，15</item>
+        <item>27档：104/13，13，13，13</item>
+        <item>28档：102/13，13，13，12</item>
+        <item>29档：96/12，12，12，12</item>
+        <item>30档：54/9，9，9，0</item>
+        <item>31档：36/9，0，9，0</item>
+        <item>32档：18/9，0，0，0</item>
+        <item>33档：54/7，7，7，6</item>
+        <item>34档：36/6，6，6，0</item>
+        <item>35档：40/5，5，5，5</item>
+        <item>36档：160/20，20，20，20</item>
+        <item>37档：102/17，17，17，0</item>
+        <item>38档：92/12，11，12，11</item>
+        <item>39档：88/11，11，11，11</item>
+        <item>40档：80/10，10，10，10</item>
+        <item>41档：36/18，0，0，0</item>
+        <item>42档：32/16，0，0，0</item>
+        <item>43档：137/17，17，17，17.5</item>
+        <item>44档：54/8.5，8.5，8.5，1.5</item>
+        <item>45档：54/17S，17S，3S，17S</item>
+        <item>46档：55/13S，14S，14S，14S</item>
+    </string-array>
+
+    <!-- 色子个数 -->
+    <string-array name="dice_num_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!--打色次数-->
+    <string-array name="use_dice_times_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!--打色方式-->
+    <string-array name="use_dice_method_arr">
+        <item>第一次打色定位起牌（打一次色子）</item>
+        <item>第一次色定位起牌，第一次色起财神</item>
+        <item>一次色定位，一/二次色相加起牌（打两次色子）</item>
+        <item>第一次色定位起牌，二次色拿财神（打两次色子）</item>
+        <item>一次色定位、順数起财神；一次色与二次色相加起牌</item>
+        <item>一次色定位，一/二次色相加起牌，三次色拿财神</item>
+        <item>一次色定位，一/二次色相加起牌，二次色倒数拿财神</item>
+        <item>一次色定位順数拿财神，（起财神方位的上家），二次色起牌</item>
+        <item>一次色定位，二次色起牌</item>
+        <item>一次色定二次色方位，二次色定位，一二次色相加起牌</item>
+        <item>一次色定二次色方位，二次色定位、起牌</item>
+        <item>总点定位，小点順数翻财神，翻财神对家大点拿牌</item>
+        <item>总点定位，小点順数翻财神，翻财神上家大点拿牌</item>
+        <item>一次色定位翻财神，起财神上家起牌</item>
+        <item>一次色定位起牌，二次总数换牌</item>
+        <item>打一次骰定庄家，起牌庄家的对面拿牌</item>
+        <item>一次色加一定位起牌，第二次色加一倒数起财神</item>
+        <item>一次色减一定位起牌，第二次色减一倒数起财神</item>
+        <item>一次色加三总定方位，二次色加三倒数财神</item>
+        <item>第一次色定位二次色相加起牌，二次色起牌方下家倒数翻财神</item>
+        <item>第一次色定位二次色相加起牌，三次色起牌方下家倒数翻财神</item>
+        <item>一次色定位起牌，二次色倒数张数翻财神</item>
+        <item>两人单数本家双数对家抓牌。庄家17张牌下面翻财神</item>
+        <item>一次色定位起点加财神牌起牌，打色順数或倒数翻财神</item>
+    </string-array>
+    <!--第一次色定位、起牌方式-->
+    <string-array name="first_dice_position_send_card_method_arr">
+        <item>总定小拿</item>
+        <item>大定小拿</item>
+        <item>总定大拿</item>
+        <item>小定大拿</item>
+        <item>大定总拿</item>
+        <item>小定总拿</item>
+        <item>总定总拿</item>
+        <item>小定小拿</item>
+        <item>总定总拿，起牌方位玩家先拿牌</item>
+        <item>对家方位，总定起牌</item>
+        <item>总定方位，首墩起牌</item>
+        <item>本家方位，总定起牌</item>
+        <item>红点定位，总数起牌</item>
+        <item>固定红点起牌</item>
+        <item>固定白点起牌</item>
+        <item>对家方位，小点起牌</item>
+        <item>总定方位，总数*2起牌</item>
+        <item>对家方位红点起牌</item>
+        <item>右家方位小点起牌</item>
+        <item>左家方位小点起牌</item>
+        <item>右家方位红点起牌</item>
+        <item>左家方位红点起牌</item>
+        <item>右家方位白点起牌</item>
+        <item>左家方位白点起牌</item>
+        <item>总数定位红点起牌</item>
+        <item>总数定位白点起牌</item>
+        <item>总数加大点</item>
+        <item>总数加小点</item>
+        <item>大定大拿</item>
+        <item>本家方位小点起牌</item>
+        <item>本家方位大点起牌</item>
+        <item>红点定位，首墩起牌</item>
+        <item>大点定位，首墩起牌</item>
+        <item>总定庄家，对家总拿</item>
+        <item>总定庄家，对家大拿</item>
+        <item>总定庄家，对家小拿</item>
+    </string-array>
+    <!--起牌补花方式-->
+    <string-array name="start_card_supplement_flower_method_arr">
+        <item>倒数补花（补花后下家补花）</item>
+        <item>倒数补花（补花后继续补花）</item>
+        <item>跳牌后补花（补花后下家补花）</item>
+        <item>跳牌后补花（补花后继续补花）</item>
+    </string-array>
+    <!--财神起牌方式-->
+    <string-array name="wealth_god_start_card_method_arr">
+        <item>跳跃翻牌值</item>
+        <item>倒数墩数翻牌值</item>
+        <item>打色倒数翻牌值</item>
+        <item>起牌方位下家，打色倒数翻财神</item>
+        <item>补花后翻财神</item>
+        <item>固定财神</item>
+        <item>固定起牌方位的第一张牌翻财神</item>
+        <item>起牌上家倒数第一张为财神</item>
+        <item>跳牌端补花后第一张为财神</item>
+        <item>打色先翻财神后补花</item>
+        <item>起牌上家方位顺数打色定财神</item>
+        <item>顺数翻财神，翻牌值起牌</item>
+        <item>比大小</item>
+        <item>打色順数翻财神</item>
+        <item>T4</item>
+        <item>T5</item>
+        <item>T6</item>
+        <item>T7</item>
+        <item>T8</item>
+        <item>T9</item>
+        <item>T10</item>
+    </string-array>
+    <!--财神打色方式-->
+    <string-array name="wealth_god_use_dice_method_arr">
+        <item>总数翻财神</item>
+        <item>大点翻财神</item>
+        <item>小点翻财神</item>
+        <item>总数*2翻财神</item>
+        <item>大点加一翻财神</item>
+        <item>小点加一翻财神</item>
+        <item>单数则跳牌财神，双数则倒数财神</item>
+        <item>双数则跳牌财神，单数数则倒数财神</item>
+        <item>倒数张数翻财神</item>
+    </string-array>
+    <!--财神条件-->
+    <string-array name="wealth_god_condition_arr">
+        <item>翻牌为财神</item>
+        <item>翻牌加一为财神</item>
+        <item>翻牌减一为财神</item>
+        <item>翻牌与翻牌加一为财神</item>
+        <item>相加为十为财神</item>
+        <item>翻牌加一和减一为财神</item>
+        <item>翻牌加一、加二为财神</item>
+        <item>翻牌加一和减一为财神，风牌只加一不减一</item>
+        <item>翻牌相同数字为财神</item>
+        <item>翻牌数字加一为财神</item>
+    </string-array>
+    <!--风牌财神循环方式-->
+    <string-array name="wind_card_wealth_god_loop_method_arr">
+        <item>东南西北中发白</item>
+        <item>东北西南中发白</item>
+        <item>东南西北；中发白</item>
+        <item>东西南北中发白</item>
+        <item>东西南北；中发白</item>
+        <item>东西；南北；中发白</item>
+    </string-array>
+    <!--可选固定财神-->
+    <string-array name="fixed_wealth_god_arr">
+        <item>可选固定财神</item>
+        <item>1条</item>
+        <item>2条</item>
+        <item>3条</item>
+        <item>4条</item>
+        <item>5条</item>
+        <item>6条</item>
+        <item>7条</item>
+        <item>8条</item>
+        <item>9条</item>
+        <item>1筒</item>
+        <item>2筒</item>
+        <item>3筒</item>
+        <item>4筒</item>
+        <item>5筒</item>
+        <item>6筒</item>
+        <item>7筒</item>
+        <item>8筒</item>
+        <item>9筒</item>
+        <item>1万</item>
+        <item>2万</item>
+        <item>3万</item>
+        <item>4万</item>
+        <item>5万</item>
+        <item>6万</item>
+        <item>7万</item>
+        <item>8万</item>
+        <item>9万</item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+        <item>中</item>
+        <item>发</item>
+        <item>白</item>
+        <item>花</item>
+        <item>百搭</item>
+    </string-array>
+    <!--财神倒数墩数-->
+    <string-array name="wealth_god_last_block_num_arr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <!--财神起牌位置-->
+    <string-array name="wealth_god_start_card_position_arr">
+        <item>上张</item>
+        <item>下张</item>
+        <item>上张和下张</item>
+        <item>单数上双数下</item>
+        <item>上财神下花牌</item>
+    </string-array>
+    <!--财神优先个数-->
+    <string-array name="wealth_god_precedence_num_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>牌型加财神1</item>
+        <item>牌型加财神2</item>
+        <item>牌型加财神3</item>
+        <item>牌型加财神4</item>
+        <item>牌型加财神5</item>
+        <item>牌型加财神6</item>
+        <item>牌型加财神7</item>
+        <item>牌型加财神8</item>
+    </string-array>
+    <!--循环次数-->
+    <string-array name="loop_times_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <!--基本张数-->
+    <string-array name="basic_num_arr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <!--特殊规则-->
+    <string-array name="special_rule_arr">
+        <item>无</item>
+        <item>二五八作将</item>
+        <item>同色牌八张以上</item>
+        <item>同色牌九张以上</item>
+        <item>断幺九</item>
+        <item>不断幺九</item>
+        <item>三张风</item>
+        <item>三色全（不缺门）</item>
+        <item>缺一色（川）</item>
+        <item>风头，三连一句话</item>
+        <item>卡5星</item>
+        <item>一九万</item>
+        <item>东南西北算杠</item>
+        <item>三一三九中发白</item>
+        <item>石家庄-刮大风</item>
+        <item>三一三九中发白牌型</item>
+        <item>兰州幺鸡幺蛋</item>
+        <item>同色最多</item>
+        <item>三个一中发白三张风</item>
+        <item>特2</item>
+        <item>特3</item>
+        <item>特4</item>
+        <item>特5</item>
+    </string-array>
+    <!--玩法名称-->
+    <string-array name="play_method_name_arr">
+        <item>A:平胡</item>
+        <item>B:混一色</item>
+        <item>C:七小对</item>
+        <item>D:对对碰</item>
+        <item>E:清一色</item>
+        <item>F:风一色</item>
+        <item>G:十三幺</item>
+        <item>H:将一色</item>
+        <item>I:混将胡</item>
+        <item>J:九大坎</item>
+        <item>K:缺一门-湘</item>
+        <item>L:三色全</item>
+        <item>M:板板胡</item>
+        <item>N:双三张</item>
+        <item>O:暗红</item>
+        <item>P:幺九</item>
+        <item>Q:十三烂</item>
+        <item>R:风牌</item>
+        <item>S:穷胡-东北</item>
+        <item>T:二八杠</item>
+        <item>U:牛牛</item>
+        <item>V换三张</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <!--空位模式-->
+    <string-array name="empty_mode_arr">
+        <item>无</item>
+        <item>东</item>
+        <item>南</item>
+        <item>西</item>
+        <item>北</item>
+    </string-array>
+
+    <!--基本设置备用-->
+    <string-array name="basic_parameter_reserve_arr">
+        <item>基本</item>
+        <item>兰科</item>
+        <item>宣和</item>
+        <item>宏勋</item>
+        <item>雀友</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <!--起牌备用1-->
+    <string-array name="start_card_reserve1_arr">
+        <item>总区域数</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <!--起牌备用2-->
+    <string-array name="start_card_reserve2_arr">
+        <item>当前区域</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <!--财神备用-->
+    <string-array name="wealth_god_reserve_arr">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <!--色子点数-->
+    <string-array name="dice_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="dail_manual">使用说明：\n
+        1.按1加拨号键，东方位开机。\n
+        2.按2加拨号键，南方位开机。\n
+        3.按3加拨号键，西方位开机。\n
+        4.按4加拨号键，北方位开机。\n
+        5.按5加拨号键，关闭程序。\n
+        6.按6加拨号键，切换玩法一。\n
+        7.按7加拨号键，切换玩法二。\n
+        8.按8加拨号键，切换玩法三。\n
+        9.按9加拨号键，东方位空位。\n
+        10.按10加拨号键，南方位空位。\n
+        11.按11加拨号键，西方位空位。\n
+        12.按12加拨号键，北方位空位。\n
+        13.按6666加拨号键打开文档说明。\n
+    </string>
+
+    <string name="direction_studying">方位识别中...</string>
+    <string name="direction_study_finish">方位识别完成</string>
+    <string name="direction_study_fail">方位识别失败</string>
+    <string name="checking_majiang">麻将检测中...</string>
+    <string name="checked_majiang">麻将检测完成</string>
+    <string name="check_majiang_fail">麻将检测失败</string>
+    <string name="remote_control_studying">学习中...</string>
+    <string name="remote_control_studied">学习完成</string>
+    <string name="remote_control_study_fail">学习失败</string>
+    <string name="channel_studying">测试中...</string>
+    <string name="channel_studied">测试完成</string>
+</resources>
+

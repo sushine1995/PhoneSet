@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_funTip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:textSize="@dimen/text_size_s"
+    android:textColor="@color/white"
+    android:background="@drawable/pw_show_fun_tip_bg">
+</TextView>

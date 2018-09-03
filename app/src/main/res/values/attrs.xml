@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="addSubWidget">
+        <attr name="initVal" format="integer" />
+        <attr name="maxVal" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="showFunctionTipTextView">
+        <attr name="funTip" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="listOptionButton">
+        <attr name="options" format="reference" />
+        <attr name="selectedIndex" format="integer" />
+    </declare-styleable>
+
+</resources>

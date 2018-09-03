@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/choose_card_method_height"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="@dimen/paly_method_setting_horizontal_interval_1"
+    android:layout_marginRight="@dimen/paly_method_setting_horizontal_interval_1"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_name"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <com.wzp.majiangset.widget.ListOptionButton
+        android:id="@+id/btn_num"
+        app:options="@array/basic_num_arr"
+        app:selectedIndex="10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/edit_play_method_horizontal_interval"
+        android:layout_marginRight="@dimen/edit_play_method_horizontal_interval"
+        android:layout_weight="1"
+        android:background="@drawable/btn_options_bg"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/down"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+
+    <com.wzp.majiangset.widget.ListOptionButton
+        android:id="@+id/btn_specialRule"
+        app:options="@array/special_rule_arr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/btn_options_bg"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/down"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_m" />
+</LinearLayout>

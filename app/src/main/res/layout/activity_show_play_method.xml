@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_vertical_padding"
+        android:layout_alignParentTop="true"
+        android:background="@color/action_bar_bg"
+        android:fitsSystemWindows="true">
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="@dimen/ibtn_back_width"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ibtn_back_bg"
+            android:contentDescription="back"/>
+
+        <RelativeLayout
+            android:id="@+id/v_spliteLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ibtn_back">
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/v_spliteLine"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_l"
+                android:gravity="center"
+                android:background="@drawable/ibtn_back_bg"/>
+
+            <Button
+                android:id="@+id/btn_saveAs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="保存为"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_l"
+                android:gravity="center"
+                android:background="@drawable/ibtn_back_bg"/>
+
+            <Button
+                android:id="@+id/btn_readFile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="读取文档"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_l"
+                android:gravity="center"
+                android:background="@drawable/ibtn_back_bg"/>
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="烧录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_l"
+                android:gravity="center"
+                android:background="@drawable/ibtn_back_bg"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_record"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/red"
+        android:background="@color/main_bg">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_playMethod"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="9dp"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

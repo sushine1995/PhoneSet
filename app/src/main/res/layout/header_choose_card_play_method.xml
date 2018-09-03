@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tv_tip_height"
+        android:layout_marginLeft="@dimen/paly_method_setting_horizontal_interval_1"
+        android:layout_marginRight="@dimen/paly_method_setting_horizontal_interval_1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_m"
+        android:textColor="@color/black"
+        android:text="循环次数"/>
+
+    <com.wzp.majiangset.widget.ListOptionButton
+        android:id="@+id/btn_loopTimes"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/btn_option_height"
+        android:layout_marginLeft="@dimen/paly_method_setting_horizontal_interval_1"
+        android:layout_marginRight="@dimen/paly_method_setting_horizontal_interval_1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:drawableRight="@drawable/down"
+        android:drawablePadding="5dp"
+        android:textSize="@dimen/text_size_m"
+        android:textColor="@color/black"
+        android:background="@drawable/btn_options_bg"
+        app:options="@array/loop_times_arr"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_playMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/paly_method_setting_horizontal_interval_1"
+        android:layout_marginRight="@dimen/paly_method_setting_horizontal_interval_1"></android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_line_height2"
+        android:background="@color/separator_line_color2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tv_tip_height"
+        android:layout_marginLeft="@dimen/paly_method_setting_horizontal_interval_1"
+        android:layout_marginRight="@dimen/paly_method_setting_horizontal_interval_1"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_m"
+        android:textColor="@color/black"
+        android:text="全国玩法汇总"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_option_height"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="@dimen/paly_method_setting_horizontal_interval_1"
+        android:paddingRight="@dimen/paly_method_setting_horizontal_interval_1"
+        android:orientation="horizontal"
+        android:background="#BEBEBE">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/black"
+            android:text="玩法名称"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/edit_play_method_horizontal_interval"
+            android:layout_marginRight="@dimen/edit_play_method_horizontal_interval"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/black"
+            android:text="基本张数"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_m"
+            android:textColor="@color/black"
+            android:text="特殊规则" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wzp.majiangset">
+    android:versionCode="15"
+    android:versionName="1.4.12">
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 操作外部存储资源 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--高德地图定位SDK-->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+
+
+    <application
+        android:name="com.wzp.majiangset.widget.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/phone"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Main">
+        <activity android:name="com.wzp.majiangset.activity.DailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.MainActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.ShowMajiangActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.ShowHandMajiangActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.ShowBaopaiActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.RecognizeDirectionActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.SettingActivity">
+        </activity>
+
+        <activity
+            android:name="com.wzp.majiangset.activity.DeviceListActivity"
+            android:theme="@style/AppTheme.Dialog"
+            android:launchMode="singleTop">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.ShowPlayMethodActivity">
+        </activity>
+
+
+        <activity android:name="com.wzp.majiangset.activity.EditChooseCardMethodActivity">
+        </activity>
+
+        <activity android:name="com.wzp.majiangset.activity.EditPlayMethodActivity" />
+
+        <activity android:name="com.wzp.majiangset.activity.ReceiveSendFileActivity" />
+
+        <activity android:name="com.wzp.majiangset.activity.ChooseFunctionActivity" />
+
+        <activity android:name="com.wzp.majiangset.activity.DailManualActivity" />
+
+        <activity android:name="com.wzp.majiangset.activity.StudyTestActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.wzp.majiangset.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--my laptop-->
+        <!--<meta-data android:name="com.amap.api.v2.apikey" android:value="938282921ea338c2cbe81954a1478e12">-->
+        <!--</meta-data>-->
+
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="a1f36f254df14d6ac2f92ed36453581e">
+        </meta-data>
+        <!--DSJYJY-->
+        <!--<meta-data android:name="com.amap.api.v2.apikey" android:value="e13047494605a848a8ff389d313d7298">
+        </meta-data>-->
+
+
+        <service android:name="com.amap.api.location.APSService"></service>
+        <service
+            android:name="com.wzp.majiangset.activity.update.DownloadApkService"
+            android:exported="true" />
+    </application>
+
+
+</manifest>

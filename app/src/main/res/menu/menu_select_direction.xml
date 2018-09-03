@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:id="@+id/menu_east"
+        android:title="东"
+        android:checkable="true"
+        android:checked="true">
+    </item>
+
+    <item
+        android:id="@+id/menu_south"
+        android:title="南"
+        android:checkable="true"
+        android:checked="true">
+    </item>
+
+    <item
+        android:id="@+id/menu_west"
+        android:title="西"
+        android:checkable="true"
+        android:checked="true">
+    </item>
+
+    <item
+        android:id="@+id/menu_north"
+        android:title="北"
+        android:checkable="true"
+        android:checked="true">
+    </item>
+</menu>

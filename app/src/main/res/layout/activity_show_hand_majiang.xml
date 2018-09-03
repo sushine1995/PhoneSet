@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/prot_eye_green">
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_vertical_padding"
+        android:background="@color/action_bar_bg"
+        android:fitsSystemWindows="true">
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="@dimen/ibtn_back_width"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ibtn_back_bg"
+            android:contentDescription="back"/>
+
+        <RelativeLayout
+            android:id="@+id/v_spliteLine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ibtn_back">
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="@color/white"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="手上牌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_l"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_moreFun"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/more_fun"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ibtn_more_fun_bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_north"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_height_half"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_northUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_height_half"
+            android:layout_below="@id/linear_north"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginTop="5dp"
+            android:text="财神"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_north"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bankerPositionNorth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="庄"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_myPositionNorth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="我"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceNorth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceNorth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceNorth2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceNorth2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceNorth3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceNorth3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_south"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_height_half"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_southUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_height_half"
+            android:layout_above="@id/linear_south"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear_southUp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="财神"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear_south"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_bankerPositionSouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="庄"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_myPositionSouth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="我"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceSouth3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceSouth3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceSouth2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceSouth2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceSouth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceSouth"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_west"
+            android:layout_width="@dimen/player_height_half"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_southUp"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_westUp"
+            android:layout_width="@dimen/player_height_half"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_southUp"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/linear_west"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/linear_westUp"
+            android:ems="1"
+            android:text="财神"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/linear_west"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bankerPositionWest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="庄"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_myPositionWest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceWest"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceWest"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceWest2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceWest2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceWest3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceWest3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_east"
+            android:layout_width="@dimen/player_height_half"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_southUp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_eastUp"
+            android:layout_width="@dimen/player_height_half"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_southUp"
+            android:layout_below="@id/linear_northUp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/linear_east"
+            android:gravity="center"
+            android:orientation="vertical"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear_southUp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/linear_eastUp"
+            android:ems="1"
+            android:text="财神"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_l" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/linear_east"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bankerPositionEast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="庄"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_myPositionEast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_l"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceEast3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceEast3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceEast2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceEast2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_blueDiceEast"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_redDiceEast"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/direction_width_height"
+            android:layout_height="@dimen/direction_width_height"
+            android:layout_below="@id/linear_northUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/north" />
+
+        <ImageView
+            android:layout_width="@dimen/direction_width_height"
+            android:layout_height="@dimen/direction_width_height"
+            android:layout_above="@id/linear_southUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/south" />
+
+        <ImageView
+            android:layout_width="@dimen/direction_width_height"
+            android:layout_height="@dimen/direction_width_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/linear_westUp"
+            android:src="@drawable/west" />
+
+        <ImageView
+            android:layout_width="@dimen/direction_width_height"
+            android:layout_height="@dimen/direction_width_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/linear_eastUp"
+            android:src="@drawable/east" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_majiangColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xl"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_moreMajiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多牌"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_m" />
+
+                <ImageView
+                    android:id="@+id/iv_moreMajiang1"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_moreMajiang2"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_moreMajiang3"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_moreMajiang4"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_lessMajiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="少牌"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_m" />
+
+                <ImageView
+                    android:id="@+id/iv_lessMajiang1"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_lessMajiang2"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_lessMajiang3"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageView
+                    android:id="@+id/iv_lessMajiang4"
+                    android:layout_width="@dimen/a_majiang_width"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_wrongNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/a_majiang_height"
+                    android:gravity="center"
+                    android:text="错牌"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_m" />
+
+                <TextView
+                    android:id="@+id/tv_wrongMajiangNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_m" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_errorTip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/a_majiang_height"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size_xl"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
